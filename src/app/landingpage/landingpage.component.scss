@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
 
+body{
+  overflow: hidden;
+}
 
 .header {
   padding: 30px;
@@ -75,6 +78,19 @@ img {
   margin-left: 5rem;
   margin-right: 5rem;
   background-color: rgb(163, 163, 163);
+}
+
+/* CSS Smooth Scroll */
+.main{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+//For Smooth Scroll effect in the different sections
+section{
+  scroll-snap-align: center;
 }
 
 .collapse {
