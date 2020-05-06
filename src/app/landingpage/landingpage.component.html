@@ -1,4 +1,5 @@
-<div class="bg-img">
+<div class="bg-img"
+  [ngStyle]="{'background-image': getUrl(), 'background-attachment': 'fixed', 'background-size' : 'contain','background-repeat': 'no-repeat','background-position': 'center'}">
   <!--toolbar-->
   <div class="header">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
@@ -13,7 +14,7 @@
           <a class="nav-item nav-link" href="#vision">Vision</a>
           <a class="nav-item nav-link" href="#">Contact Us</a>
           <a class="nav-item nav-link " href="#">Subscription</a>
-          <a class="nav-item nav-link " href="#login">LOGIN</a>
+          <a class="nav-item nav-link " href="#login" id="login-btn">LOGIN</a>
         </div>
       </div>
     </nav>
@@ -159,6 +160,8 @@
     </div>
   </section>
 
-
+  <div class="footer">
+    <p> Copyright 2020 PREPEASE | Privacy Policy</p>
+  </div>
 
 </div>

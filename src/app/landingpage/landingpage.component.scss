@@ -34,8 +34,15 @@ a {
   color: #867575;
 }
 
+#login-btn {
+  color: #174D9B;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  font-style: normal;
+  font-weight: bold;
+}
+
 .explore {
-  width: 50px;
+  width: auto;
   position: fixed;
   top: 50%;
   left: 0;
@@ -48,12 +55,18 @@ a {
   font-style: normal;
   font-weight: bold;
   text-align: center;
-  padding-left: 15px;
+  padding-left: 40px;
   color: #867575;
   padding-bottom: 15px;
   padding-top: 15px;
 }
 
+img {
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 
 .container {
@@ -61,10 +74,6 @@ a {
   margin-left: 5rem;
   margin-right: 5rem;
   background-color: rgb(163, 163, 163);
-  /* CSS Smooth Scroll */
-  overflow-y: scroll; 
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 .collapse {
@@ -74,30 +83,13 @@ a {
 #about,
 #vision,
 #login {
-  padding: 20px 10px;
+  padding: 30px 10px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   height: 512px;
-  margin: 0 auto;
+  margin: 5em auto;
   //background-image: src('assets/img/svg2.png');
-}
-
-.section{
-   /* Scroll Snap */
-   scroll-snap-align: center;
-}
-
-section#about{
-  background:no-repeat center center/cover;;
-}
-
-section#vision{
-  background:no-repeat center center/cover;;
-}
-
-section#login{
-  background:no-repeat center center/cover;;
 }
 
 .about-left-col h2 {
@@ -105,19 +97,22 @@ section#login{
   font-style: Regular;
   font-size: 25px;
   vertical-align: Top;
+  margin-left: 10px;
+  //margin-top: 10px;
   color: Solid #000000;
-  Offset: 0px, 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 2px;
 }
 
 .about-left-col {
   flex-basis: 50%;
-  padding: 0 0 30px 30px;
+  padding: 30px 0 30px 30px;
+  height: 512px;
 }
 
 .about-left-col p {
   font-Family: Ruluko;
   font-Style: Regular;
-  font-Size: 20px;
+  font-Size: px;
   line-height: 137%;
   color: #5C5757;
 }
@@ -126,6 +121,7 @@ section#login{
   flex-basis: 50%;
   padding: 0 30px 0 30px;
   border-width: 1px;
+  height: 512px;
   justify-content: center;
   align-self: center;
 }
@@ -138,20 +134,23 @@ section#login{
   font-family: Ruluko;
   font-style: Regular;
   font-size: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
   vertical-align: Top;
   color: Solid #000000;
-  Offset: 0px, 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 2px;
 }
 
 .vision-left-col {
   flex-basis: 50%;
   padding: 0 0 30px 30px;
+  height: 512px;
 }
 
 .vision-left-col p {
   font-Family: Ruluko;
   font-Style: Regular;
-  font-Size: 20px;
+  font-Size: 16px;
   line-height: 137%;
   color: #5C5757;
 }
@@ -160,6 +159,7 @@ section#login{
   flex-basis: 50%;
   padding: 0 0 30px 30px;
   border-width: 1px;
+  height: 512px;
   border-color: solid red;
 }
 
@@ -171,20 +171,23 @@ section#login{
   font-family: Ruluko;
   font-style: Regular;
   font-size: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
   vertical-align: Top;
   color: Solid #000000;
-  Offset: 0px, 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 2px;
 }
 
 .login-left-col {
   flex-basis: 50%;
   padding: 0 0 30px 30px;
+  height: 512px;
 }
 
 .login-left-col p {
   font-Family: Ruluko;
   font-Style: Regular;
-  font-Size: 20px;
+  font-Size: 16px;
   line-height: 137%;
   color: #5C5757;
 }
@@ -194,8 +197,24 @@ section#login{
   padding: 0 0 30px 30px;
   border-width: 1px;
   border-color: solid red;
+  height: 512px;
 }
 
 .login-text {
   padding: 3rem;
+}
+
+.footer {
+  display: flex;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.footer p {
+  font-Family: Ruluko;
+  font-Style: Regular;
+  font-Size: 15px;
+  color: #5C5757;
+  padding: 10px;
+  align-content: center;
 }

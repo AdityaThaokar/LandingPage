@@ -14,5 +14,8 @@ export class LandingpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getUrl() {
+    return "url('/assets/img/streetlight.png')";
+  }
 
 }
