@@ -204,6 +204,26 @@ img {
   padding: 3rem;
 }
 
+.login-form {
+  //background-color: rgb(211, 211, 211);
+  padding: 5em;
+  align-content: center;
+}
+
+.login-form a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  color: #1665D8;
+}
+
+.input-field {
+  width: 60%;
+  border: 1px green;
+}
+
 .footer {
   display: flex;
   margin-left: 5rem;
