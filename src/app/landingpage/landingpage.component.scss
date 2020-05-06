@@ -243,13 +243,43 @@ img {
   align-content: center;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black !important;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
+@media only screen and (max-width: 414px) {
+
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgb(163, 163, 163);
+  }
+
+  .about-left-col {
+    margin-top: 3rem;
+    flex-basis: 100%;
+  }
+
+  .vision-left-col {
+    margin-top: 3rem;
+    flex-basis: 100%;
+  }
+
+  .login-left-col {
+    margin-top: 3rem;
+    flex-basis: 100%;
+  }
+
+
+
+  .about-right-col {
+    //margin-top: 3rem;
+    display: none;
+  }
+
+  .vision-right-col {
+    //margin-top: 3rem;
+    display: none;
+  }
+
+  .login-right-col {
+    //margin-top: 3rem;
+    display: none;
+  }
 }
