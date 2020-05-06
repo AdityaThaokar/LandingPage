@@ -5,7 +5,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-landingpage',
   templateUrl: './landingpage.component.html',
-  styleUrls: ['./landingpage.component.scss']
+  styleUrls: ['./landingpage.component.scss'],
 })
 export class LandingpageComponent implements OnInit {
 

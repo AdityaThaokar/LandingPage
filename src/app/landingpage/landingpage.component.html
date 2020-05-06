@@ -33,140 +33,162 @@
   <!---About-->
   <section id="about">
     <div class="about-left-col">
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <div class="about-text">
-            <h2> Welcome to the future of education </h2>
-            <p>
-              A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on your
-              site
-              —
-              hence the name landing.
-              It’s most commonly associated with pay-per-click ads like Google Adwords, where you can drive traffic to a
-              specific URL that has been designed to receive those visitors.
-              The problem with most landing pages is that they’re created around broad categories like “jeans” instead
-              of
-              being more specifically focused like “women’s skinny jeans” or “juniors boot-cut jeans”.
-              These days, people intuitively understand that when searching the web, the site whose description most
-              closely
-              matches their search is likely to be the winner.
-            </p>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="about-text">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2> slide1 </h2>
+              <p>
+                A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on
+                your
+                site
+              </p>
+            </div>
+            <div class="carousel-item">
+              <h2> slide 2 </h2>
+              <p>
+                A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on
+                your
+                site
+              </p>
+            </div>
+            <div class="carousel-item">
+              <h2> slide 3</h2>
+              <p>
+                A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on
+                your
+                site
+              </p>
+            </div>
           </div>
-        </ng-template>
-
-        <ng-template ngbSlide>
-          <div class="about-text">
-            <h2> 2nd slide </h2>
-            <p>
-              It’s most commonly associated with pay-per-click ads like Google Adwords, where you can drive traffic to a
-              specific URL that has been designed to receive those visitors.
-              The problem with most landing pages is that they’re created around broad categories like “jeans” instead
-              of
-              being more specifically focused like “women’s skinny jeans” or “juniors boot-cut jeans”.
-              These days, people intuitively understand that when searching the web, the site whose description most
-              closely
-              matches their search is likely to be the winner.
-            </p>
-          </div>
-        </ng-template>
-
-        <ng-template ngbSlide>
-          <div class="about-text">
-            <h2> 3rd slide </h2>
-            <p>
-              The problem with most landing pages is that they’re created around broad categories like “jeans” instead
-              of
-              being more specifically focused like “women’s skinny jeans” or “juniors boot-cut jeans”.
-              These days, people intuitively understand that when searching the web, the site whose description most
-              closely
-              matches their search is likely to be the winner.
-            </p>
-          </div>
-        </ng-template>
-      </ngb-carousel>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
+
+
     <div class="about-right-col">
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg2.png" width="512px">
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg3.png" width="512px">
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg1.png" width="512px">
-        </ng-template>
-      </ngb-carousel>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/svg1.png">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/svg2.png">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/svg3.png">
+          </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
   </section>
 
   <!---Vision-->
   <section id="vision">
     <div class="vision-left-col">
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <div class="vision-text">
-            <h2> Welcome to the future of education </h2>
-            <p>
-              A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on your
-              site
-              —
-              hence the name landing.
-              It’s most commonly associated with pay-per-click ads like Google Adwords, where you can drive traffic to a
-              specific URL that has been designed to receive those visitors.
-              The problem with most landing pages is that they’re created around broad categories like “jeans” instead
-              of
-              being more specifically focused like “women’s skinny jeans” or “juniors boot-cut jeans”.
-              These days, people intuitively understand that when searching the web, the site whose description most
-              closely
-              matches their search is likely to be the winner.
-            </p>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators" id="vision-slider">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="vision-text">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2> slide1 </h2>
+              <p>
+                A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on
+                your
+                site
+              </p>
+            </div>
+            <div class="carousel-item">
+              <h2> slide 2 </h2>
+              <p>
+                A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on
+                your
+                site
+              </p>
+            </div>
+            <div class="carousel-item">
+              <h2> slide 3</h2>
+              <p>
+                A landing page, simply put, is any page that gets traffic from anywhere other than the same pages on
+                your
+                site
+              </p>
+            </div>
           </div>
-        </ng-template>
-
-        <ng-template ngbSlide>
-          <div class="vision-text">
-            <h2> 2nd slide </h2>
-            <p>
-              It’s most commonly associated with pay-per-click ads like Google Adwords, where you can drive traffic to a
-              specific URL that has been designed to receive those visitors.
-              The problem with most landing pages is that they’re created around broad categories like “jeans” instead
-              of
-              being more specifically focused like “women’s skinny jeans” or “juniors boot-cut jeans”.
-              These days, people intuitively understand that when searching the web, the site whose description most
-              closely
-              matches their search is likely to be the winner.
-            </p>
-          </div>
-        </ng-template>
-
-        <ng-template ngbSlide>
-          <div class="vision-text">
-            <h2> 3rd slide </h2>
-            <p>
-              The problem with most landing pages is that they’re created around broad categories like “jeans” instead
-              of
-              being more specifically focused like “women’s skinny jeans” or “juniors boot-cut jeans”.
-              These days, people intuitively understand that when searching the web, the site whose description most
-              closely
-              matches their search is likely to be the winner.
-            </p>
-          </div>
-        </ng-template>
-      </ngb-carousel>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
+
+
     <div class="vision-right-col">
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg2.png" width="512px">
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg3.png" width="512px">
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg1.png" width="512px">
-        </ng-template>
-      </ngb-carousel>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators" id="vision-slider">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/svg1.png">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/svg2.png">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/svg3.png">
+          </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -192,17 +214,26 @@
       </div>
     </div>
     <div class="login-right-col">
-      <ngb-carousel>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg3.png" width="512px">
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg2.png" width="512px">
-        </ng-template>
-        <ng-template ngbSlide>
-          <img src="../assets/img/svg1.png" width="512px">
-        </ng-template>
-      </ngb-carousel>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators" id="login-slider">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/assets/img/svg1.png">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/svg2.png">
+          </div>
+          <div class="carousel-item">
+            <img src="/assets/img/svg3.png">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

@@ -120,10 +120,10 @@ section {
 }
 
 .about-left-col {
-  margin-top: 8rem;
+  // margin-top: 8rem;
   flex-basis: 50%;
   padding: 30px 0 30px 30px;
-  height: 512px;
+  height: 512px fixed;
 }
 
 .about-left-col p {
@@ -135,11 +135,11 @@ section {
 }
 
 .about-right-col {
-  margin-top: 4rem;
+  //margin-top: 4rem;
   flex-basis: 50%;
   padding: 0 30px 0 30px;
   border-width: 1px;
-  height: 512px;
+  height: 512px fixed;
   justify-content: center;
   align-self: center;
 }
@@ -163,7 +163,7 @@ section {
   margin-top: 5rem;
   flex-basis: 50%;
   padding: 0 0 30px 30px;
-  height: 512px;
+  height: 512px fixed;
 }
 
 .vision-left-col p {
@@ -179,7 +179,7 @@ section {
   flex-basis: 50%;
   padding: 0 0 30px 30px;
   border-width: 1px;
-  height: 512px;
+  height: 512px fixed;
   border-color: solid red;
 }
 
@@ -202,7 +202,7 @@ section {
   margin-top: 5rem;
   flex-basis: 50%;
   padding: 0 0 30px 30px;
-  height: 512px;
+  height: 512px fixed;
 }
 
 .login-left-col p {
@@ -219,7 +219,7 @@ section {
   padding: 0 0 30px 30px;
   border-width: 1px;
   border-color: solid red;
-  height: 512px;
+  height: 512px fixed;
 }
 
 .login-text {
@@ -259,6 +259,14 @@ section {
   padding: 10px;
   align-content: center;
 }
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+  filter: invert(1);
+}
+
+
 
 @media only screen and (max-width: 414px) {
 
@@ -304,4 +312,6 @@ section {
     //margin-top: 3rem;
     display: none;
   }
+
+
 }

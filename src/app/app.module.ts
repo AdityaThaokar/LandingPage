@@ -13,6 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
     MatButtonModule,
     CarouselModule,
     MatInputModule,
+    MDBBootstrapModule,
     MatFormFieldModule,
     NgbModule
   ],
