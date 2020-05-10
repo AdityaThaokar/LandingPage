@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
 
-body {
-  overflow: hidden;
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  -ms-overflow-style: none;
 }
 
 .header {
