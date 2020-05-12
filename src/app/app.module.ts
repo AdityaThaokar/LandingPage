@@ -14,11 +14,13 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { TestcardsComponent } from './testcards/testcards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    TestcardsComponent
   ],
   imports: [
     BrowserModule,

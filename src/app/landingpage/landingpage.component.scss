@@ -319,6 +319,18 @@ b {
     display: none;
   }
 
+  .vision-left-col {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/assets/img/vision.png');
+  }
+
+  .contact-left-col {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/assets/img/contact.png');
+  }
+
+  .login-left-col {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/assets/img/login.png');
+  }
+
 }
 
 @media only screen and (min-width: 770px) and (max-width: 1024px) {
