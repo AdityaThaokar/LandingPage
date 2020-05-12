@@ -38,9 +38,6 @@ a {
   padding-top: 1.5rem;
 }
 
-.navbar-toggler {
-  color: #867575;
-}
 
 #login-btn {
   color: #174D9B;
@@ -75,13 +72,6 @@ img {
   display: block;
   object-fit: cover;
   overflow: hidden;
-}
-
-.container {
-  height: 512px;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  background-color: rgb(163, 163, 163);
 }
 
 /* CSS Smooth Scroll */
@@ -120,7 +110,6 @@ section {
   padding-top: 30px;
   padding-left: 30px;
   height: 512px !important;
-
   background-color: #F1F1F1;
 
   h2 {
@@ -222,6 +211,7 @@ section {
   width: 100%;
   border: 1px green;
   font-family: Calibri;
+  font-size: 20px;
   font-style: Regular;
   margin-left: 20px;
   margin-top: 10px;
@@ -277,55 +267,96 @@ b {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 768px) {
 
-  .container {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    background-color: rgb(163, 163, 163);
+  .header h2 {
+    margin-left: 1rem;
   }
 
-  .about-left-col {
-    margin-top: 3rem;
-    flex-basis: 100%;
-  }
-
-  .vision-left-col {
-    margin-top: 3rem;
-    flex-basis: 100%;
-  }
-
+  .about-left-col,
+  .vision-left-col,
+  .contact-left-col,
   .login-left-col {
     margin-top: 3rem;
     flex-basis: 100%;
+    padding-left: 10px;
+  }
+
+  .about-left-col {
+    padding-top: 10px;
+
+    h2 {
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+    h3 {
+      margin-left: 20px;
+      font-size: 25px;
+    }
+
+    p {
+      margin-left: 20px;
+      font-Size: 20px;
+    }
+
+    .carousel-indicators {
+      bottom: 0px !important;
+    }
   }
 
   #about,
   #vision,
+  #contact,
   #login {
-
     height: 100vh;
   }
 
-  .about-right-col {
-    //margin-top: 3rem;
-    display: none;
-  }
-
-  .vision-right-col {
-    //margin-top: 3rem;
-    display: none;
-  }
-
-  .contact-right-col {
-    //margin-top: 3rem;
-    display: none;
-  }
-
+  .about-right-col,
+  .vision-right-col,
+  .contact-right-col,
   .login-right-col {
-    //margin-top: 3rem;
     display: none;
   }
 
+}
 
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
+
+  .about-left-col,
+  .vision-left-col,
+  .contact-left-col,
+  .login-left-col {
+    flex-basis: 50%;
+  }
+
+  .about-right-col,
+  .vision-right-col,
+  .contact-right-col,
+  .login-right-col {
+    flex-basis: 50%;
+  }
+
+  .about-left-col {
+    padding-top: 10px;
+
+    h2 {
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+    h3 {
+      margin-left: 20px;
+      font-size: 25px;
+    }
+
+    p {
+      margin-left: 20px;
+      font-Size: 20px;
+    }
+
+    .carousel-indicators {
+      bottom: 0px !important;
+    }
+  }
 }
