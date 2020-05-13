@@ -5,72 +5,10 @@
   font-family: Abel;
 }
 
-.table-borderless {
-  align-content: center;
-  border: none;
-  margin-left: 1em;
-  margin-top: 2em;
-
-  td {
-    color: white;
-    padding: 0 1em 0.5em 1em;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 11px;
-  }
-
-  #marks {
-    padding-top: 20px;
-    text-align: center;
-    padding-right: 0;
-  }
-
-  #type {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 16px;
-    padding-right: 0;
-  }
-}
-
-.starttest {
-  font-family: Assistant;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  border: none;
-  border-radius: 16px;
-  color: black;
-  padding: 3px 8px 3px 8px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.stats input[type="button"]:hover {
-  background-color: #56ACDD;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-
-  img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.15);
-    border: 1px white;
-    padding: 4px;
-  }
-}
-
+//basic card structure
 .card {
-  width: 450px;
-  height: 250px;
+  width: 391px;
+  height: 206px;
   background-color: #fff;
   background: linear-gradient(#f8f8f8, #fff);
   box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
@@ -78,25 +16,18 @@
   overflow: hidden;
   position: relative;
   display: inline-block;
-  margin: 1.5rem;
+  margin: 1rem;
+
+  h1 {
+    padding-top: 0.5em;
+    text-align: center;
+    font-family: Abel;
+  }
 }
 
-.card h1 {
-  padding-top: 0.5em;
-  text-align: center;
-  font-family: Abel;
-}
 
-.card .additional {
-  position: absolute;
-  width: 150px;
-  height: 100%;
-  background: linear-gradient(#DB3B3B, #DB3B3B);
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
-}
 
+//different colors of cards
 .card.green .additional {
   background: linear-gradient(#73C54C, #73C54C);
 }
@@ -113,119 +44,178 @@
   background: linear-gradient(#F38739, #F38739);
 }
 
-
 .card:hover .additional {
   width: 100%;
   border-radius: 0 5px 5px 0;
 }
 
-.card .additional .user-card {
-  width: 150px;
+
+
+//details part of the card
+.card .additional {
+  position: absolute;
+  width: 134px;
   height: 100%;
-  position: relative;
-  float: left;
+  background: linear-gradient(#DB3B3B, #DB3B3B);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+
+  .user-card {
+    width: 134px;
+    height: 100%;
+    position: relative;
+    float: left;
+  }
+
+  .user-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -2px;
+    height: 80%;
+    border-left: 2px solid rgba(0, 0, 0, 0.025);
+
+  }
+
+  .user-card .branch,
+  .user-card .year {
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+
+  .user-card .year {
+    top: 85%;
+  }
+
+  .more-info {
+    width: 257px;
+    float: left;
+    position: absolute;
+    left: 134px;
+    height: 100%;
+
+    h1 {
+      color: #fff;
+      margin-bottom: 0;
+    }
+
+    //test details in table
+    .table-borderless {
+      align-content: center;
+      border: none;
+      margin-left: 0.5em;
+      margin-top: 1em;
+
+      td {
+        color: white;
+        padding: 0 1em 0.5em 1.5em;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 11px;
+      }
+
+      #marks {
+        padding-top: 20px;
+        text-align: center;
+        padding-right: 0;
+      }
+
+      #type {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 16px;
+        padding-right: 0;
+      }
+    }
+
+  }
+
+  //test button class
+  .starttest {
+    font-family: Assistant;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px;
+    border: none;
+    border-radius: 16px;
+    color: black;
+    padding: 3px 8px 3px 8px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .testbutton input[type="button"]:hover {
+    background-color: #56ACDD;
+  }
+
+  .testbutton {
+    display: flex;
+    position: absolute;
+    align-self: end;
+    float: right;
+    right: 1rem;
+    bottom: 0.5rem;
+    top: auto;
+    color: #fff;
+  }
+
+  .testbutton>div {
+    flex: 1;
+    text-align: center;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+
+    //profile picture of user
+    img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.15);
+      border: 1px white;
+      padding: 4px;
+    }
+  }
+
 }
 
-.card .additional .user-card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10%;
-  right: -2px;
-  height: 80%;
-  border-left: 2px solid rgba(0, 0, 0, 0.025);
-
-}
-
-.card .additional .user-card .level,
-.card .additional .user-card .points {
-  top: 15%;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: rgba(0, 0, 0, 0.15);
-  padding: 0.125rem 0.75rem;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-
-.card .additional .user-card .points {
-  top: 85%;
-}
-
-.card .additional .user-card svg {
-  top: 50%;
-}
-
-.card .additional .more-info {
-  width: 300px;
-  float: left;
-  position: absolute;
-  left: 150px;
-  height: 100%;
-}
-
-.card .additional .more-info h1 {
-  color: #fff;
-  margin-bottom: 0;
-}
-
-.card.green {
-  color: #224C36;
-}
-
-.card .additional .coords {
-  margin: 0 1rem;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.card.green .additional .coords {
-  color: #325C46;
-}
-
-.card .additional .coords span+span {
-  float: right;
-}
-
-.card .additional .stats {
-  display: flex;
-  position: absolute;
-  align-self: end;
-  float: right;
-  right: 1rem;
-  bottom: 1rem;
-  top: auto;
-  color: #fff;
-}
-
-.card.green .additional .stats {
-  color: #325C46;
-}
-
-.card .additional .stats>div {
-  flex: 1;
-  text-align: center;
-}
-
-
-
+//General part of the card
 .card .general {
-  width: 300px;
+  width: 257px;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 0.2rem;
   padding-top: 0;
-}
+  font-size: 12px;
+  line-height: 13px;
 
-.card .general .more {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.9em;
+  .more {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+  }
+
+  p {
+    padding: 1rem;
+  }
 }
