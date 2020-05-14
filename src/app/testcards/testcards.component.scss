@@ -5,6 +5,15 @@
   font-family: Abel;
 }
 
+h1 {
+  max-width: 18ch; //limits the character length of title for 18 characters
+  overflow: hidden;
+  padding-left: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
 //basic card structure
 .card {
   width: 391px;
